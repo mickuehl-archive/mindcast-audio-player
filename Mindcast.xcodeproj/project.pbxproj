@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11BD2EBD1AAE0BC500E415C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD2EBC1AAE0BC500E415C8 /* AppDelegate.swift */; };
+		11BD2EBF1AAE0BC500E415C8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD2EBE1AAE0BC500E415C8 /* FirstViewController.swift */; };
+		11BD2EC11AAE0BC500E415C8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD2EC01AAE0BC500E415C8 /* SecondViewController.swift */; };
+		11BD2EC41AAE0BC500E415C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD2EC21AAE0BC500E415C8 /* Main.storyboard */; };
+		11BD2EC61AAE0BC500E415C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BD2EC51AAE0BC500E415C8 /* Images.xcassets */; };
+		11BD2EC91AAE0BC500E415C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BD2EC71AAE0BC500E415C8 /* LaunchScreen.xib */; };
+		11BD2ED51AAE0BC500E415C8 /* MindcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD2ED41AAE0BC500E415C8 /* MindcastTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11BD2ECF1AAE0BC500E415C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BD2EAF1AAE0BC500E415C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11BD2EB61AAE0BC500E415C8;
+			remoteInfo = Mindcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11BD2EB71AAE0BC500E415C8 /* Mindcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BD2EBB1AAE0BC500E415C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BD2EBC1AAE0BC500E415C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11BD2EBE1AAE0BC500E415C8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		11BD2EC01AAE0BC500E415C8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		11BD2EC31AAE0BC500E415C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11BD2EC51AAE0BC500E415C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		11BD2EC81AAE0BC500E415C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		11BD2ECE1AAE0BC500E415C8 /* MindcastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindcastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BD2ED31AAE0BC500E415C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BD2ED41AAE0BC500E415C8 /* MindcastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindcastTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11BD2EB41AAE0BC500E415C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BD2ECB1AAE0BC500E415C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11BD2EAE1AAE0BC500E415C8 = {
+			isa = PBXGroup;
+			children = (
+				11BD2EB91AAE0BC500E415C8 /* Mindcast */,
+				11BD2ED11AAE0BC500E415C8 /* MindcastTests */,
+				11BD2EB81AAE0BC500E415C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11BD2EB81AAE0BC500E415C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11BD2EB71AAE0BC500E415C8 /* Mindcast.app */,
+				11BD2ECE1AAE0BC500E415C8 /* MindcastTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11BD2EB91AAE0BC500E415C8 /* Mindcast */ = {
+			isa = PBXGroup;
+			children = (
+				11BD2EBC1AAE0BC500E415C8 /* AppDelegate.swift */,
+				11BD2EBE1AAE0BC500E415C8 /* FirstViewController.swift */,
+				11BD2EC01AAE0BC500E415C8 /* SecondViewController.swift */,
+				11BD2EC21AAE0BC500E415C8 /* Main.storyboard */,
+				11BD2EC51AAE0BC500E415C8 /* Images.xcassets */,
+				11BD2EC71AAE0BC500E415C8 /* LaunchScreen.xib */,
+				11BD2EBA1AAE0BC500E415C8 /* Supporting Files */,
+			);
+			path = Mindcast;
+			sourceTree = "<group>";
+		};
+		11BD2EBA1AAE0BC500E415C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11BD2EBB1AAE0BC500E415C8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11BD2ED11AAE0BC500E415C8 /* MindcastTests */ = {
+			isa = PBXGroup;
+			children = (
+				11BD2ED41AAE0BC500E415C8 /* MindcastTests.swift */,
+				11BD2ED21AAE0BC500E415C8 /* Supporting Files */,
+			);
+			path = MindcastTests;
+			sourceTree = "<group>";
+		};
+		11BD2ED21AAE0BC500E415C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11BD2ED31AAE0BC500E415C8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11BD2EB61AAE0BC500E415C8 /* Mindcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BD2ED81AAE0BC500E415C8 /* Build configuration list for PBXNativeTarget "Mindcast" */;
+			buildPhases = (
+				11BD2EB31AAE0BC500E415C8 /* Sources */,
+				11BD2EB41AAE0BC500E415C8 /* Frameworks */,
+				11BD2EB51AAE0BC500E415C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mindcast;
+			productName = Mindcast;
+			productReference = 11BD2EB71AAE0BC500E415C8 /* Mindcast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11BD2ECD1AAE0BC500E415C8 /* MindcastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BD2EDB1AAE0BC500E415C8 /* Build configuration list for PBXNativeTarget "MindcastTests" */;
+			buildPhases = (
+				11BD2ECA1AAE0BC500E415C8 /* Sources */,
+				11BD2ECB1AAE0BC500E415C8 /* Frameworks */,
+				11BD2ECC1AAE0BC500E415C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11BD2ED01AAE0BC500E415C8 /* PBXTargetDependency */,
+			);
+			name = MindcastTests;
+			productName = MindcastTests;
+			productReference = 11BD2ECE1AAE0BC500E415C8 /* MindcastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11BD2EAF1AAE0BC500E415C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ratchet.cc;
+				TargetAttributes = {
+					11BD2EB61AAE0BC500E415C8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					11BD2ECD1AAE0BC500E415C8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 11BD2EB61AAE0BC500E415C8;
+					};
+				};
+			};
+			buildConfigurationList = 11BD2EB21AAE0BC500E415C8 /* Build configuration list for PBXProject "Mindcast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11BD2EAE1AAE0BC500E415C8;
+			productRefGroup = 11BD2EB81AAE0BC500E415C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11BD2EB61AAE0BC500E415C8 /* Mindcast */,
+				11BD2ECD1AAE0BC500E415C8 /* MindcastTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11BD2EB51AAE0BC500E415C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BD2EC41AAE0BC500E415C8 /* Main.storyboard in Resources */,
+				11BD2EC91AAE0BC500E415C8 /* LaunchScreen.xib in Resources */,
+				11BD2EC61AAE0BC500E415C8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BD2ECC1AAE0BC500E415C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11BD2EB31AAE0BC500E415C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BD2EC11AAE0BC500E415C8 /* SecondViewController.swift in Sources */,
+				11BD2EBD1AAE0BC500E415C8 /* AppDelegate.swift in Sources */,
+				11BD2EBF1AAE0BC500E415C8 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BD2ECA1AAE0BC500E415C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BD2ED51AAE0BC500E415C8 /* MindcastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11BD2ED01AAE0BC500E415C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11BD2EB61AAE0BC500E415C8 /* Mindcast */;
+			targetProxy = 11BD2ECF1AAE0BC500E415C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11BD2EC21AAE0BC500E415C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11BD2EC31AAE0BC500E415C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11BD2EC71AAE0BC500E415C8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11BD2EC81AAE0BC500E415C8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11BD2ED61AAE0BC500E415C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11BD2ED71AAE0BC500E415C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11BD2ED91AAE0BC500E415C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mindcast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11BD2EDA1AAE0BC500E415C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mindcast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		11BD2EDC1AAE0BC500E415C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MindcastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mindcast.app/Mindcast";
+			};
+			name = Debug;
+		};
+		11BD2EDD1AAE0BC500E415C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MindcastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mindcast.app/Mindcast";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11BD2EB21AAE0BC500E415C8 /* Build configuration list for PBXProject "Mindcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BD2ED61AAE0BC500E415C8 /* Debug */,
+				11BD2ED71AAE0BC500E415C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BD2ED81AAE0BC500E415C8 /* Build configuration list for PBXNativeTarget "Mindcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BD2ED91AAE0BC500E415C8 /* Debug */,
+				11BD2EDA1AAE0BC500E415C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		11BD2EDB1AAE0BC500E415C8 /* Build configuration list for PBXNativeTarget "MindcastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BD2EDC1AAE0BC500E415C8 /* Debug */,
+				11BD2EDD1AAE0BC500E415C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11BD2EAF1AAE0BC500E415C8 /* Project object */;
+}
