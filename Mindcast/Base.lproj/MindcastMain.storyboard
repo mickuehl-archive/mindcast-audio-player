@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kE7-5U-bf9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kE7-5U-bf9">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Play-->
         <scene sceneID="YQy-fw-sig">
             <objects>
-                <viewController id="yde-hB-7Vj" customClass="PlayViewController" customModule="Mindcast" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayView" id="yde-hB-7Vj" customClass="PlayViewController" customModule="Mindcast" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5jI-sl-gza"/>
                         <viewControllerLayoutGuide type="bottom" id="Ljr-fh-pEh"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_episode_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-Tg-4zk">
-                                <rect key="frame" x="200" y="61" width="200" height="200"/>
+                                <rect key="frame" x="200" y="60" width="200" height="200"/>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8fV-yv-eyZ">
                                 <rect key="frame" x="24" y="435" width="552" height="31"/>
@@ -98,6 +98,15 @@
                                     <action selector="startButtonPressed:" destination="yde-hB-7Vj" eventType="touchUpInside" id="u7z-by-uJX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S5-AM-dNe">
+                                <rect key="frame" x="445" y="60" width="60" height="30"/>
+                                <state key="normal" title="DETAILS">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toDetailsView:" destination="yde-hB-7Vj" eventType="touchUpInside" id="LRF-GE-4Mr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -105,10 +114,12 @@
                             <constraint firstItem="Ljr-fh-pEh" firstAttribute="top" secondItem="abI-23-mMO" secondAttribute="bottom" constant="114" id="1xU-vZ-HHP"/>
                             <constraint firstItem="6uV-eU-hQ3" firstAttribute="top" secondItem="nwd-Tg-4zk" secondAttribute="bottom" constant="24" id="72n-gO-QuB"/>
                             <constraint firstItem="xTN-5O-Sj6" firstAttribute="top" secondItem="nwd-Tg-4zk" secondAttribute="bottom" constant="24" id="7Hk-fa-4bS"/>
+                            <constraint firstItem="6S5-AM-dNe" firstAttribute="top" secondItem="yrb-zK-PZd" secondAttribute="bottom" constant="15" id="B9d-Gf-guQ"/>
                             <constraint firstItem="yrb-zK-PZd" firstAttribute="top" secondItem="5jI-sl-gza" secondAttribute="bottom" constant="4" id="BoU-T8-t82"/>
                             <constraint firstAttribute="centerX" secondItem="nwd-Tg-4zk" secondAttribute="centerX" id="JWI-0y-Wbj"/>
                             <constraint firstAttribute="centerX" secondItem="6uV-eU-hQ3" secondAttribute="centerX" id="Kxt-uE-xrl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8fV-yv-eyZ" secondAttribute="trailing" constant="24" id="OHJ-vN-f6X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6S5-AM-dNe" secondAttribute="trailing" constant="79" id="PXR-ZN-vJU"/>
                             <constraint firstItem="l3J-Bh-nwI" firstAttribute="top" secondItem="nwd-Tg-4zk" secondAttribute="bottom" constant="24" id="Pje-bl-2Hv"/>
                             <constraint firstItem="abI-23-mMO" firstAttribute="leading" secondItem="tJv-Uh-PMm" secondAttribute="leadingMargin" constant="16" id="QkA-81-r2y"/>
                             <constraint firstItem="6uV-eU-hQ3" firstAttribute="top" secondItem="nwd-Tg-4zk" secondAttribute="bottom" constant="24" id="RSr-lo-mRl"/>
@@ -141,10 +152,39 @@
             </objects>
             <point key="canvasLocation" x="362" y="-536"/>
         </scene>
+        <!--Details View Controller-->
+        <scene sceneID="F4J-zF-nsn">
+            <objects>
+                <viewController storyboardIdentifier="DetailsView" id="Kds-v7-e3B" customClass="DetailsViewController" customModule="Mindcast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="net-Uf-7bT"/>
+                        <viewControllerLayoutGuide type="bottom" id="vzn-7y-prK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FCB-8y-BGd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nZ-0D-ZCG">
+                                <rect key="frame" x="135" y="174" width="42" height="30"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toPlayView:" destination="Kds-v7-e3B" eventType="touchUpInside" id="Da8-h2-f7V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ry8-vX-Bti" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="-536"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="1bQ-u8-MaV">
             <objects>
-                <viewController id="a8b-LI-u48" customClass="SettingsViewController" customModule="Mindcast" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsView" id="a8b-LI-u48" customClass="SettingsViewController" customModule="Mindcast" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MSZ-LV-zxu"/>
                         <viewControllerLayoutGuide type="bottom" id="A5e-iI-qGO"/>
@@ -180,10 +220,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="ioV-Ta-J1Z">
-                                <rect key="frame" x="24" y="122" width="544" height="1"/>
+                                <rect key="frame" x="24" y="122" width="544" height="2"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="6hi-1q-mqk">
-                                <rect key="frame" x="24" y="175" width="544" height="1"/>
+                                <rect key="frame" x="24" y="175" width="544" height="2"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -243,7 +283,7 @@
         <image name="ctrl_play.png" width="50" height="65"/>
         <image name="ctrl_stop.png" width="64" height="64"/>
         <image name="default_episode_image.png" width="200" height="200"/>
-        <image name="grey_line.png" width="400" height="1"/>
+        <image name="grey_line.png" width="400" height="2"/>
         <image name="icon_play.png" width="24" height="24"/>
         <image name="icon_settings.png" width="24" height="24"/>
     </resources>

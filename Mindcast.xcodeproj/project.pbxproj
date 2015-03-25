@@ -16,6 +16,7 @@
 		11BD2EE41AAE0CE700E415C8 /* AssetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD2EE21AAE0CE700E415C8 /* AssetCatalog.swift */; };
 		11BD2EE51AAE0CE700E415C8 /* AssetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD2EE31AAE0CE700E415C8 /* AssetBundle.swift */; };
 		11BD2EFC1AAE0EDB00E415C8 /* MindcastMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD2EFA1AAE0EDB00E415C8 /* MindcastMain.storyboard */; };
+		11BFF7281AC2D5AB00366B6E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BFF7271AC2D5AB00366B6E /* DetailsViewController.swift */; };
 		11D2BCDB1AC0994000D2906E /* ctrl_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D2BCD81AC0994000D2906E /* ctrl_pause.png */; };
 		11D2BCDC1AC0994000D2906E /* ctrl_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D2BCD91AC0994000D2906E /* ctrl_play.png */; };
 		11D2BCDD1AC0994000D2906E /* ctrl_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 11D2BCDA1AC0994000D2906E /* ctrl_stop.png */; };
@@ -55,6 +56,7 @@
 		11BD2EE21AAE0CE700E415C8 /* AssetCatalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetCatalog.swift; sourceTree = "<group>"; };
 		11BD2EE31AAE0CE700E415C8 /* AssetBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetBundle.swift; sourceTree = "<group>"; };
 		11BD2EFB1AAE0EDB00E415C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MindcastMain.storyboard; sourceTree = "<group>"; };
+		11BFF7271AC2D5AB00366B6E /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		11D2BCD81AC0994000D2906E /* ctrl_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ctrl_pause.png; path = ../../../../../../Jottacloud/01_projects/02_Mindcast/ui_exports/ctrl_pause.png; sourceTree = "<group>"; };
 		11D2BCD91AC0994000D2906E /* ctrl_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ctrl_play.png; path = ../../../../../../Jottacloud/01_projects/02_Mindcast/ui_exports/ctrl_play.png; sourceTree = "<group>"; };
 		11D2BCDA1AC0994000D2906E /* ctrl_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ctrl_stop.png; path = ../../../../../../Jottacloud/01_projects/02_Mindcast/ui_exports/ctrl_stop.png; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				11BD2EE21AAE0CE700E415C8 /* AssetCatalog.swift */,
 				11BD2EE31AAE0CE700E415C8 /* AssetBundle.swift */,
 				11BD2EE01AAE0CC000E415C8 /* PlayViewController.swift */,
+				11BFF7271AC2D5AB00366B6E /* DetailsViewController.swift */,
 				11BD2EDE1AAE0CB800E415C8 /* SettingsViewController.swift */,
 				11BD2EBC1AAE0BC500E415C8 /* AppDelegate.swift */,
 				11BD2EC51AAE0BC500E415C8 /* Images.xcassets */,
@@ -319,6 +322,7 @@
 				11BD2EBD1AAE0BC500E415C8 /* AppDelegate.swift in Sources */,
 				11BD2EE51AAE0CE700E415C8 /* AssetBundle.swift in Sources */,
 				11BD2EDF1AAE0CB800E415C8 /* SettingsViewController.swift in Sources */,
+				11BFF7281AC2D5AB00366B6E /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

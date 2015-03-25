@@ -135,6 +135,11 @@ class PlayViewController: UIViewController, AVAudioPlayerDelegate {
         musicPlayer.volume = sender.value
     }
     
+    @IBAction func toDetailsView(sender: UIButton) {
+        let detailsView = self.storyboard?.instantiateViewControllerWithIdentifier("DetailsView") as DetailsViewController
+        self.presentViewController(detailsView, animated: true, completion: nil)
+    }
+    
     // system callbacks
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
