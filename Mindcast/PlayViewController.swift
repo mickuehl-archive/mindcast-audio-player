@@ -34,7 +34,9 @@ class PlayViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // set the button state
+        //
+        // UI SETUP
+        //
         startButton.hidden = false
         stopButton.hidden = true
         pauseButton.hidden = true
