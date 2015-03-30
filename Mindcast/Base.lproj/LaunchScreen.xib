@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="0Id-17-neJ">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_episode_image_nobkg.png" translatesAutoresizingMaskIntoConstraints="NO" id="xIk-55-IJQ">
-                    <rect key="frame" x="164" y="104" width="152" height="152"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default_episode_image_nobkg.png" translatesAutoresizingMaskIntoConstraints="NO" id="xIk-55-IJQ">
+                    <rect key="frame" x="74" y="128" width="226" height="208"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mindcast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHL-Cx-Xd8">
-                    <rect key="frame" x="78" y="297" width="325" height="92"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mindcast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHL-Cx-Xd8">
+                    <rect key="frame" x="-96" y="435" width="566.5" height="160.5"/>
                     <constraints>
+                        <constraint firstAttribute="width" secondItem="wHL-Cx-Xd8" secondAttribute="height" multiplier="283:80" id="EJa-EK-xfb"/>
                         <constraint firstAttribute="width" secondItem="wHL-Cx-Xd8" secondAttribute="height" multiplier="325:92" id="GcV-v0-HJd"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="30"/>
+                    <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="112"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="EJa-EK-xfb"/>
+                            <exclude reference="GcV-v0-HJd"/>
+                        </mask>
+                    </variation>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="0.50980392159999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="xIk-55-IJQ" secondAttribute="centerX" id="BlX-Sj-Elg"/>
-                <constraint firstItem="xIk-55-IJQ" firstAttribute="top" secondItem="0Id-17-neJ" secondAttribute="top" constant="104" id="hsp-O5-0Tb"/>
-                <constraint firstAttribute="centerX" secondItem="wHL-Cx-Xd8" secondAttribute="centerX" id="q7v-WS-M6W"/>
+                <constraint firstAttribute="centerX" secondItem="xIk-55-IJQ" secondAttribute="centerX" id="43f-LG-P9y"/>
+                <constraint firstItem="xIk-55-IJQ" firstAttribute="top" secondItem="0Id-17-neJ" secondAttribute="top" constant="128" id="EWu-wU-vBe"/>
+                <constraint firstItem="wHL-Cx-Xd8" firstAttribute="top" secondItem="xIk-55-IJQ" secondAttribute="bottom" constant="99" id="ivO-oq-QK2"/>
+                <constraint firstAttribute="centerX" secondItem="wHL-Cx-Xd8" secondAttribute="centerX" id="oOW-vt-GfI"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="548" y="455"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="314.25" y="422.5"/>
         </view>
     </objects>
     <resources>

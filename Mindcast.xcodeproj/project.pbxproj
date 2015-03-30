@@ -14,8 +14,8 @@
 		1147184E1AC317C8004740A4 /* icon_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 1147184B1AC317C8004740A4 /* icon_play.png */; };
 		1147184F1AC317C8004740A4 /* icon_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 1147184C1AC317C8004740A4 /* icon_settings.png */; };
 		114718511AC317CF004740A4 /* grey_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 114718501AC317CF004740A4 /* grey_line.png */; };
-		114718541AC31806004740A4 /* default_episode_image_nobkg.png in Resources */ = {isa = PBXBuildFile; fileRef = 114718521AC31806004740A4 /* default_episode_image_nobkg.png */; };
-		114718551AC31806004740A4 /* default_episode_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 114718531AC31806004740A4 /* default_episode_image.png */; };
+		1169D8801AC92397002F19A4 /* default_episode_image_nobkg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1169D87F1AC92397002F19A4 /* default_episode_image_nobkg.png */; };
+		1169D8821AC92405002F19A4 /* default_episode_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 1169D8811AC92405002F19A4 /* default_episode_image.png */; };
 		11BD2EBD1AAE0BC500E415C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD2EBC1AAE0BC500E415C8 /* AppDelegate.swift */; };
 		11BD2EC61AAE0BC500E415C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BD2EC51AAE0BC500E415C8 /* Images.xcassets */; };
 		11BD2EC91AAE0BC500E415C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BD2EC71AAE0BC500E415C8 /* LaunchScreen.xib */; };
@@ -50,8 +50,8 @@
 		1147184B1AC317C8004740A4 /* icon_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_play.png; sourceTree = "<group>"; };
 		1147184C1AC317C8004740A4 /* icon_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_settings.png; sourceTree = "<group>"; };
 		114718501AC317CF004740A4 /* grey_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_line.png; sourceTree = "<group>"; };
-		114718521AC31806004740A4 /* default_episode_image_nobkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_episode_image_nobkg.png; sourceTree = "<group>"; };
-		114718531AC31806004740A4 /* default_episode_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_episode_image.png; sourceTree = "<group>"; };
+		1169D87F1AC92397002F19A4 /* default_episode_image_nobkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default_episode_image_nobkg.png; path = Assets/default_episode_image_nobkg.png; sourceTree = SOURCE_ROOT; };
+		1169D8811AC92405002F19A4 /* default_episode_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default_episode_image.png; path = ../../../../../../Jottacloud/01_projects/02_mindcast/ui_exports/default_episode_image.png; sourceTree = "<group>"; };
 		11BD2EB71AAE0BC500E415C8 /* Mindcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BD2EBB1AAE0BC500E415C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BD2EBC1AAE0BC500E415C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,8 +174,8 @@
 		11BD2EE71AAE0D6200E415C8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				114718521AC31806004740A4 /* default_episode_image_nobkg.png */,
-				114718531AC31806004740A4 /* default_episode_image.png */,
+				1169D87F1AC92397002F19A4 /* default_episode_image_nobkg.png */,
+				1169D8811AC92405002F19A4 /* default_episode_image.png */,
 				114718501AC317CF004740A4 /* grey_line.png */,
 				1147184A1AC317C8004740A4 /* icon_library.png */,
 				1147184B1AC317C8004740A4 /* icon_play.png */,
@@ -269,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BD2EFC1AAE0EDB00E415C8 /* MindcastMain.storyboard in Resources */,
+				1169D8801AC92397002F19A4 /* default_episode_image_nobkg.png in Resources */,
 				11BD2EC91AAE0BC500E415C8 /* LaunchScreen.xib in Resources */,
 				114718491AC3179A004740A4 /* ctrl_stop.png in Resources */,
 				1147184D1AC317C8004740A4 /* icon_library.png in Resources */,
@@ -277,9 +278,8 @@
 				1147184E1AC317C8004740A4 /* icon_play.png in Resources */,
 				114718481AC3179A004740A4 /* ctrl_play.png in Resources */,
 				11D2BCEF1AC09A4000D2906E /* E000_intro.mp3 in Resources */,
-				114718541AC31806004740A4 /* default_episode_image_nobkg.png in Resources */,
 				114718471AC3179A004740A4 /* ctrl_pause.png in Resources */,
-				114718551AC31806004740A4 /* default_episode_image.png in Resources */,
+				1169D8821AC92405002F19A4 /* default_episode_image.png in Resources */,
 				1147184F1AC317C8004740A4 /* icon_settings.png in Resources */,
 				11D2BCF11AC09A4000D2906E /* E000_wakeup.mp3 in Resources */,
 				114718511AC317CF004740A4 /* grey_line.png in Resources */,
