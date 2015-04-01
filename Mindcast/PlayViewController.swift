@@ -14,6 +14,9 @@ class PlayViewController: UIViewController, AVAudioPlayerDelegate {
     // title
     @IBOutlet weak var episodeTitle: UILabel!
     
+    // episode button
+    @IBOutlet weak var episodeImage: UIButton!
+    
     // volume sliders
     @IBOutlet weak var vocalsSlider: UISlider!
     @IBOutlet weak var musicSlider: UISlider!
@@ -93,7 +96,9 @@ class PlayViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
-    // callbacks for UI elements
+    //
+    // start, pause & stop buttons
+    //
     @IBAction func startButtonPressed(sender: AnyObject) {
         // set the button state
         startButton.hidden = true
@@ -129,6 +134,9 @@ class PlayViewController: UIViewController, AVAudioPlayerDelegate {
         vocalPlayer.stop()
     }
     
+    //
+    // volume sliders
+    //
     @IBAction func vocalsSliderChanged(sender: UISlider) {
         vocalPlayer.volume = sender.value
     }
@@ -137,6 +145,9 @@ class PlayViewController: UIViewController, AVAudioPlayerDelegate {
         musicPlayer.volume = sender.value
     }
     
+    //
+    // navigate to the details page, even if not used at the moment
+    //
     @IBAction func toDetailsView(sender: UIButton) {
         let detailsView = self.storyboard?.instantiateViewControllerWithIdentifier("DetailsView") as DetailsViewController
         self.presentViewController(detailsView, animated: true, completion: nil)

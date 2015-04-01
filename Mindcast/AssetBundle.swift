@@ -84,7 +84,8 @@ class AssetBundle: NSObject {
         }
         
         assetIdx++
-        return assetAtIndex(assetIdx - 1)    }
+        return assetAtIndex(assetIdx - 1)
+    }
     
     func reset() {
         self.assetIdx = 1
