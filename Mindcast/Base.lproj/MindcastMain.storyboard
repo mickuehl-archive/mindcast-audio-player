@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kE7-5U-bf9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kE7-5U-bf9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_episode_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-Tg-4zk">
-                                <rect key="frame" x="200" y="60" width="200" height="200"/>
-                            </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8fV-yv-eyZ">
                                 <rect key="frame" x="24" y="435" width="552" height="31"/>
                                 <color key="tintColor" red="1" green="0.50980392159999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,7 +62,7 @@
                                     <action selector="musicSliderChanged:" destination="yde-hB-7Vj" eventType="valueChanged" id="5c3-V3-08x"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTN-5O-Sj6">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTN-5O-Sj6">
                                 <rect key="frame" x="351" y="285" width="64" height="64"/>
                                 <state key="normal" image="ctrl_pause.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,7 +71,7 @@
                                     <action selector="pauseButtonPressed:" destination="yde-hB-7Vj" eventType="touchUpInside" id="nAg-GW-CMy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3J-Bh-nwI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3J-Bh-nwI">
                                 <rect key="frame" x="190" y="285" width="64" height="64"/>
                                 <state key="normal" image="ctrl_stop.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,13 +80,13 @@
                                     <action selector="stopButtonPressed:" destination="yde-hB-7Vj" eventType="touchUpInside" id="fRh-f6-feg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Episode Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-zK-PZd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="The Episode Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-zK-PZd">
                                 <rect key="frame" x="100" y="24" width="400" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uV-eU-hQ3">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uV-eU-hQ3">
                                 <rect key="frame" x="268" y="285" width="64" height="64"/>
                                 <state key="normal" image="ctrl_play.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,9 +95,9 @@
                                     <action selector="startButtonPressed:" destination="yde-hB-7Vj" eventType="touchUpInside" id="u7z-by-uJX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S5-AM-dNe">
-                                <rect key="frame" x="445" y="60" width="60" height="30"/>
-                                <state key="normal" title="DETAILS">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6S5-AM-dNe">
+                                <rect key="frame" x="200" y="53" width="200" height="200"/>
+                                <state key="normal" image="default_episode_image.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -110,32 +107,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nwd-Tg-4zk" firstAttribute="leading" secondItem="l3J-Bh-nwI" secondAttribute="leading" constant="-24" id="0x1-3B-1zm"/>
                             <constraint firstItem="Ljr-fh-pEh" firstAttribute="top" secondItem="abI-23-mMO" secondAttribute="bottom" constant="114" id="1xU-vZ-HHP"/>
-                            <constraint firstItem="6uV-eU-hQ3" firstAttribute="top" secondItem="nwd-Tg-4zk" secondAttribute="bottom" constant="24" id="72n-gO-QuB"/>
-                            <constraint firstItem="xTN-5O-Sj6" firstAttribute="top" secondItem="nwd-Tg-4zk" secondAttribute="bottom" constant="24" id="7Hk-fa-4bS"/>
-                            <constraint firstItem="6S5-AM-dNe" firstAttribute="top" secondItem="yrb-zK-PZd" secondAttribute="bottom" constant="15" id="B9d-Gf-guQ"/>
-                            <constraint firstItem="yrb-zK-PZd" firstAttribute="top" secondItem="5jI-sl-gza" secondAttribute="bottom" constant="4" id="BoU-T8-t82"/>
-                            <constraint firstAttribute="centerX" secondItem="nwd-Tg-4zk" secondAttribute="centerX" id="JWI-0y-Wbj"/>
+                            <constraint firstAttribute="centerX" secondItem="6S5-AM-dNe" secondAttribute="centerX" id="KwG-6k-FGE"/>
                             <constraint firstAttribute="centerX" secondItem="6uV-eU-hQ3" secondAttribute="centerX" id="Kxt-uE-xrl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8fV-yv-eyZ" secondAttribute="trailing" constant="24" id="OHJ-vN-f6X"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6S5-AM-dNe" secondAttribute="trailing" constant="79" id="PXR-ZN-vJU"/>
-                            <constraint firstItem="l3J-Bh-nwI" firstAttribute="top" secondItem="nwd-Tg-4zk" secondAttribute="bottom" constant="24" id="Pje-bl-2Hv"/>
                             <constraint firstItem="abI-23-mMO" firstAttribute="leading" secondItem="tJv-Uh-PMm" secondAttribute="leadingMargin" constant="16" id="QkA-81-r2y"/>
-                            <constraint firstItem="6uV-eU-hQ3" firstAttribute="top" secondItem="nwd-Tg-4zk" secondAttribute="bottom" constant="24" id="RSr-lo-mRl"/>
                             <constraint firstItem="Ljr-fh-pEh" firstAttribute="top" secondItem="8fV-yv-eyZ" secondAttribute="bottom" constant="86" id="SVl-ee-QaQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PRg-c3-0xk" secondAttribute="trailing" constant="24" id="X4V-Bv-kek"/>
                             <constraint firstItem="oX2-41-jFW" firstAttribute="leading" secondItem="tJv-Uh-PMm" secondAttribute="leadingMargin" constant="16" id="ctV-HK-4yf"/>
-                            <constraint firstItem="nwd-Tg-4zk" firstAttribute="top" secondItem="yrb-zK-PZd" secondAttribute="bottom" constant="16" id="h3Q-F4-dH1"/>
                             <constraint firstAttribute="centerX" secondItem="yrb-zK-PZd" secondAttribute="centerX" id="hHc-hJ-Gr9"/>
-                            <constraint firstItem="nwd-Tg-4zk" firstAttribute="top" secondItem="yrb-zK-PZd" secondAttribute="bottom" constant="16" id="hOF-NI-kXX"/>
                             <constraint firstItem="8fV-yv-eyZ" firstAttribute="leading" secondItem="tJv-Uh-PMm" secondAttribute="leadingMargin" constant="10" id="hT3-gp-HIn"/>
-                            <constraint firstItem="nwd-Tg-4zk" firstAttribute="trailing" secondItem="xTN-5O-Sj6" secondAttribute="trailing" constant="24" id="lbq-Hi-Ntc"/>
                             <constraint firstItem="Ljr-fh-pEh" firstAttribute="top" secondItem="PRg-c3-0xk" secondAttribute="bottom" constant="24" id="ntW-Lr-oRv"/>
-                            <constraint firstItem="nwd-Tg-4zk" firstAttribute="top" secondItem="yrb-zK-PZd" secondAttribute="bottom" constant="16" id="oe4-ya-GiJ"/>
                             <constraint firstItem="PRg-c3-0xk" firstAttribute="leading" secondItem="tJv-Uh-PMm" secondAttribute="leadingMargin" constant="10" id="pf3-SW-vho"/>
                             <constraint firstAttribute="bottomMargin" secondItem="oX2-41-jFW" secondAttribute="bottom" constant="100" id="rWc-16-xWy"/>
-                            <constraint firstItem="nwd-Tg-4zk" firstAttribute="top" secondItem="yrb-zK-PZd" secondAttribute="bottom" constant="16" id="shI-qg-fWQ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Play" image="icon_play.png" id="5qk-QM-SnR">
