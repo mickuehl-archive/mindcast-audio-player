@@ -28,7 +28,7 @@ class AssetCatalog: NSObject, NSURLSessionDelegate {
         
         // find the documents folder URL
         let fileManager = NSFileManager()
-        let urls = fileManager.URLsForDirectory(NSSearchPathDirectory.DocumentationDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask) as [NSURL]
+        let urls = fileManager.URLsForDirectory(NSSearchPathDirectory.DocumentationDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask) as! [NSURL]
         // just assume success, why not?
         documentsUrl = "\(urls[0])"
         

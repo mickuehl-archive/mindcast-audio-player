@@ -149,7 +149,7 @@ class PlayViewController: UIViewController, AVAudioPlayerDelegate {
     // navigate to the details page, even if not used at the moment
     //
     @IBAction func toDetailsView(sender: UIButton) {
-        let detailsView = self.storyboard?.instantiateViewControllerWithIdentifier("DetailsView") as DetailsViewController
+        let detailsView = self.storyboard?.instantiateViewControllerWithIdentifier("DetailsView") as! DetailsViewController
         self.presentViewController(detailsView, animated: true, completion: nil)
     }
     
